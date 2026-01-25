@@ -1,0 +1,45 @@
+.projectsContainer {
+	height: 100vh;
+	width: 979px;
+	padding-top: 47px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 32px;
+	min-height: 100vh;
+}
+
+.sliderContainer {
+	display: flex;
+	align-items: center;
+	width: 90%;
+}
+
+.projectDisplay {
+	flex-grow: 1;
+	aspect-ratio: 4 / 5;
+	height: 700px;
+	width: 90%;
+	background-color: var(--gris-slider);
+	padding: 20px;
+}
+.projectDisplay h3 {
+	color: var(--gris);
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.displayButton {
+	background-color: transparent;
+	cursor: pointer;
+	margin: -40px;
+	position: relative;
+	z-index: 10;
+}
+.displayButton img {
+	transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+.displayButton:hover img {
+	filter: drop-shadow(0px 2px 8px var(--gris));
+}

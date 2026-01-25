@@ -1,100 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Cuaderno Técnico</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="container">
-        <div class="sidebar">
-            <div class="lang-buttons">
-                <button onclick="changeLang('es')">ES 🇪🇸</button>
-                <button onclick="changeLang('en')">EN 🇬🇧</button>
-            </div>
-            <div class="sidebar">
-                <h2 class="lang-es">Mi Perfil</h2>
-                <h2 class="lang-en" style="display:none;">My Profile</h2>
-                <p><strong>Ubicación:</strong> Argentina</p>
-                <p><strong>Tecnologías con las que trabajé: </strong> MongoDB, SQL, Python, </p>
-                <hr>
-                <p>¡Hola! Soy Martina, actualmente estoy cursando el 4to año de la Licenciatura en Ciencias de la
-                    Computación. </p>
-                <p>
-                    En mi camino de formación realicé diversos proyectos en grupo e individuales, que van desde Testing
-                    QA, diseño web, análisis de datos</p>
-            </div>
-        </div>
-
-        <div class="book">
-            <div class="page" id="p1" style="z-index: 3;">
-                <div class="front cover">
-                    <h1 style="margin-top: 150px; text-align: center;">LOGBOOK</h1>
-                    <p style="text-align: center;">2025 - 2026</p>
-                </div>
-                <div class="back">
-                    <h1>Bases de Datos</h1>
-                    <p>Proyectos de optimización de queries y pipelines de agregación en MongoDB.</p>
-                </div>
-            </div>
-
-            <div class="page" id="p2" style="z-index: 2;">
-                <div class="front">
-                    <h1>Arquitectura</h1>
-                    <p>Estudios sobre memoria caché, optimización de ciclos y microarquitectura.</p>
-                </div>
-                <div class="back">
-                    <h1>3D Printing</h1>
-                    <p>Diseño de piezas mecánicas en PETG y calibración de impresoras.</p>
-                </div>
-            </div>
-
-            <div class="page" id="p3" style="z-index: 1;">
-                <div class="front">
-                    <h1>Automatización</h1>
-                    <p>Scripts en Selenium para Moodle y herramientas de entorno local.</p>
-                </div>
-                <div class="back cover">
-                    <h1 style="margin-top: 200px; text-align: center;">EOF</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const pages = document.querySelectorAll('.page');
-        let totalPages = pages.length;
-
-        pages.forEach((page, index) => {
-            page.onclick = function () {
-                if (this.classList.contains('flipped')) {
-                    this.classList.remove('flipped');
-                    this.style.zIndex = totalPages - index;
-                } else {
-                    this.classList.add('flipped');
-                    this.style.zIndex = index + 1;
-                }
-            };
-        });
-
-        function changeLang(lang) {
-            const textosEs = document.querySelectorAll('.lang-es');
-            const textosEn = document.querySelectorAll('.lang-en');
-
-            if (lang === 'es') {
-                textosEs.forEach(el => el.style.display = 'block');
-                textosEn.forEach(el => el.style.display = 'none');
-            } else {
-                textosEs.forEach(el => el.style.display = 'none');
-                textosEn.forEach(el => el.style.display = 'block');
-            }
-        }
-    </script>
-
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martina Ibañez Wulbrandt</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

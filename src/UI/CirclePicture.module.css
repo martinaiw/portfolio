@@ -1,0 +1,19 @@
+.circlePictureContainer {
+	width: 372px;
+	height: 372px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid var(--crema);
+	box-sizing: border-box;
+	flex-shrink: 0;
+}
+
+.circlePicture {
+	width: 110%;
+	height: 110%;
+	object-fit: cover;
+	display: block;
+}

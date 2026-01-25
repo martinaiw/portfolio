@@ -1,0 +1,49 @@
+.aboutMeContainer {
+	width: 837px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column; 
+	gap: 21px;
+	padding-top: 60px;
+}
+.titleWrapper {
+	transform: translateY(30px);
+}
+/* .pictureWrapper{
+	transform: translateY(-10px); 
+}
+*/
+
+.flexContainer {
+	display: flex;
+	padding-left: 57px;
+	flex-direction: row; 
+	align-items: flex-end; 
+	width: 100%;
+}
+
+.description {
+	width: 408px;
+	line-height: auto;
+	font-size: 40px;
+	font-family: var(--fuente-cuerpo);
+	margin-bottom: 40px;
+	align-self: flex-end;
+}
+
+.textContainer {
+	padding-left: 57px;
+	width: 100%;
+	height: 462px;
+	line-height: auto;
+	color: var(--crema);
+	font: var(--fuente-cuerpo);
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.textContainer p {
+	font-size: 34px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}

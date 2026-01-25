@@ -1,0 +1,18 @@
+.titleCardContainer {
+	background-color: #ecedb0;
+	height: 76px;
+	width: var(--card-width, auto);
+	display: flex;
+	justify-content: var(--flex-align, left);
+	align-items: center;
+	padding-left: var(--padding-left, 0px);
+}
+.titleCardContainer h2 {
+	font-size: var(--card-font-size, 46px);
+	color: var(--gris);
+	font-family: var(--fuente-titulo);
+	text-align: var(--text-align, left);
+	line-height: 1;
+	width: 100%;
+	padding: 35px;
+}
