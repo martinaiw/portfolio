@@ -1,0 +1,23 @@
+.formationCard {
+	border-radius: 7px;
+	background-color: var(--beige);
+	width: 80%;
+	padding: 10px;
+}
+.formationCard p,
+.formationCard h2,
+.durationCard p {
+	color: var(--gris);
+	font: var(--fuente-cuerpo);
+}
+
+.formationCard p {
+	font-size: 22px;
+	margin: 0;
+}
+
+.formationCard h2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 0;
+}

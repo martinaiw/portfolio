@@ -1,8 +1,9 @@
+import Formation from "../UI/Formation";
 
 function Page2() {
 	return (
-		<section>
-
+		<section id="page2">
+			<Formation />
 		</section>
 	);
 }

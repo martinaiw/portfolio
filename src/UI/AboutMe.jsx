@@ -1,6 +1,7 @@
 import TitleCard from "./TitleCard";
 import CirclePicture from "./CirclePicture";
 import styles from "./AboutMe.module.css";
+import ProfilePic from "../assets/ProfilePic.PNG";
 
 function AboutMe() {
 	return (
@@ -22,10 +23,7 @@ function AboutMe() {
 						Ciencias de la Computación
 					</p>
 					<div className={styles.pictureWrapper}>
-						<CirclePicture
-							image="src/assets/ProfilePic.PNG"
-							alt="Profile picture"
-						/>
+						<CirclePicture image={ProfilePic} alt="Profile picture" />
 					</div>
 				</div>
 

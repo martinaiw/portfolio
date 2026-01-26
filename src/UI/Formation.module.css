@@ -1,0 +1,18 @@
+.formationSection {
+	padding: 57px;
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
+    max-width: 1517px;
+	width: 100%;
+
+}
+.formationAndCertificateContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+    gap: 20px;
+}
