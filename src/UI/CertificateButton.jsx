@@ -31,12 +31,6 @@ function CertificateButton({ certificateUrl, isLink = false }) {
                             className={styles.fullImage}
                             onClick={() => setShowImage(false)}
                         />
-                        <button 
-                            className={styles.closeBtn} 
-                            onClick={() => setShowImage(false)}
-                        >
-                            &times;
-                        </button>
                     </div>
                 </div>
             )}

@@ -1,0 +1,14 @@
+.abilitiesContainer {
+	color: var(--crema);
+	font: var(--fuente-cuerpo);
+}
+.abilitiesText {
+	font-size: 39px;
+	gap: 15px;
+}
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-left: 60px;
+}

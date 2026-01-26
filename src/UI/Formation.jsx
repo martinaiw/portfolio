@@ -7,12 +7,15 @@ import testingManual from "../assets/testingManual.jpg";
 function Formation() {
 	return (
 		<>
+			<div>
+
 			<TitleCard
 				title="Mi formación"
 				width="562px"
 				fontSize="46px"
 				align="left"
-			/>
+				/>
+				</div>
 			<section id="formation" className={styles.formationSection}>
 				<FormationCard
 					title="Licenciatura en Ciencias de la Computación"
