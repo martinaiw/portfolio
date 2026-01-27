@@ -5,7 +5,7 @@ import LinkedIn from "../assets/images/LinkedIn.png";
 import CV from "../assets/images/CV.png";
 import TitleCard from "./TitleCard";
 import styles from "./Contact.module.css";
-import CVMartina from "../assets/files/CV-MIW.pdf";
+import CVMartina from "/public/files/CV-MIW.pdf";
 
 function Contact() {
 	return (
