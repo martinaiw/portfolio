@@ -1,7 +1,7 @@
 .contactButtonContainer {
-	border: none;
+	border: 3px solid var(--gris);
 	cursor: pointer;
-	background-color: var(--beige);
+	background-color: var(--gris-slider);
 	height: 80px;
 	width: auto;
 	color: var(--gris);
@@ -30,4 +30,24 @@
 a {
 	color: var(--gris);
 	text-decoration: none;
+}
+.noPointer {
+    cursor: default !important;
+}
+
+.noPointer a {
+    cursor: default !important;
+}
+
+@media (max-width: 1000px) {
+	.contactButtonContainer {
+		height: 60px;
+		font-size: 24px;
+		padding: 0 15px;
+		gap: 10px;
+	}
+	.iconWrapper {
+		width: 30px;
+		height: 30px;
+	}
 }

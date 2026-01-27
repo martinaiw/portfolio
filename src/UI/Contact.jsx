@@ -1,8 +1,8 @@
 import ContactButton from "./ContactButton";
-import gmail from "../assets/gmail.png";
-import GH from "../assets/GH.png";
-import LinkedIn from "../assets/LinkedIn.png";
-import CV from "../assets/CV.png";
+import gmail from "../assets/images/gmail.png";
+import GH from "../assets/images/GH.png";
+import LinkedIn from "../assets/images/LinkedIn.png";
+import CV from "../assets/images/CV.png";
 import TitleCard from "./TitleCard";
 import styles from "./Contact.module.css";
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import certificateBtn from "../assets/certificateBtn.png";
+import certificateBtn from "../assets/images/certificateBtn.png";
 import styles from "./CertificateButton.module.css";
 
 function CertificateButton({ certificateUrl, isLink = false }) {

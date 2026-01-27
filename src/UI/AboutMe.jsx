@@ -1,9 +1,11 @@
 import TitleCard from "./TitleCard";
 import CirclePicture from "./CirclePicture";
 import styles from "./AboutMe.module.css";
-import ProfilePic from "../assets/ProfilePic.PNG";
+import ProfilePic from "../assets/images/ProfilePic.PNG";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 function AboutMe() {
+	const isMobile = useMediaQuery(1000);
 	return (
 		<>
 			<section id="sobre-mi" className={styles.aboutMeContainer}>
@@ -13,7 +15,7 @@ function AboutMe() {
 						width="390px"
 						fontSize="46px"
 						align="left"
-						paddingLeft="20px"
+						paddingLeft={isMobile ? "0px" : "20px"}
 					/>
 				</div>
 

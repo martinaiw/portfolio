@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@400;700&family=Krona+One&display=swap");
 * {
 	box-sizing: border-box;
+	scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+	display: none;
 }
 :root {
 	--verde-fondo: #787934;
@@ -12,8 +16,17 @@
 	--fuente-cuerpo: "K2D", sans-serif;
 }
 
+html,
+body {
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {

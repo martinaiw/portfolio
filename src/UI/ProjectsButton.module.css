@@ -1,0 +1,30 @@
+.projectsButtonContainer {
+	cursor: pointer;
+	border: 3px solid var(--gris);
+	height: 40px;
+	width: 80%;
+	color: var(--gris);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 35px;
+	font-size: 24px;
+	border-radius: 7px;
+	font: var(--fuente-cuerpo);
+    font-weight: bold;
+}
+
+a {
+	color: var(--gris);
+	text-decoration: none;
+}
+
+.noPointer {
+	cursor: default !important;
+}
+
+.noPointer a {
+	cursor: default !important;
+}
+

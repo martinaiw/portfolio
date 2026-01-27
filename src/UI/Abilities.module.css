@@ -3,7 +3,7 @@
 	font: var(--fuente-cuerpo);
 }
 .abilitiesText {
-	font-size: 39px;
+	font-size: 30px;
 	gap: 15px;
 }
 ul {
@@ -11,4 +11,13 @@ ul {
 	flex-direction: column;
 	gap: 16px;
 	padding-left: 60px;
+}
+@media (max-width: 1000px) {
+	.abilitiesText {
+		font-size: 28px;
+	}
+	unorderedList {
+		padding-left: 30px;
+		gap: 12px;
+	}
 }

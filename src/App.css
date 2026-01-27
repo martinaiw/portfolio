@@ -1,15 +1,10 @@
-
 .portfolioWrapper {
-    height: 100vh; /* Ocupa toda la pantalla */
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory; /* Fuerza el frenado en el eje Y */
-    scroll-behavior: smooth; /* Para que al clickear un link vaya suave */
-  }
-  
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
 
-  .pageSection {
-    height: 100vh; /* Cada sección mide exactamente una pantalla */
-    width: 100%;
-    scroll-snap-align: start; /* Al scrollear, frena al inicio de la sección */
-    scroll-snap-stop: always; /* Evita que te saltes secciones de un tirón */
-  }
+.pageSection {
+	height: 100vh;
+	width: 100%;
+}

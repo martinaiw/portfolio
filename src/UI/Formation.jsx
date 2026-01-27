@@ -2,7 +2,7 @@ import styles from "./Formation.module.css";
 import FormationCard from "../UI/FormationCard.jsx";
 import TitleCard from "../UI/TitleCard";
 import CertificateButton from "./CertificateButton.jsx";
-import testingManual from "../assets/testingManual.jpg";
+import testingManual from "../assets/images/testingManual.jpg";
 
 function Formation() {
 	return (

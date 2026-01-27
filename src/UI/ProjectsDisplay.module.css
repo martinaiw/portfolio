@@ -1,0 +1,93 @@
+.sliderContainer {
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.projectDisplay {
+	flex-grow: 1;
+	height: 80vh;
+	width: 100%;
+	background-color: var(--gris-slider);
+	overflow: hidden;
+	display: flex;
+	flex-shrink: 0;
+}
+
+.projectDisplay video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.projectDisplay h3 {
+	color: var(--gris);
+	font-size: 24px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	align-self: center;
+	padding-right: 20px;
+}
+.displayButton {
+	background-color: transparent;
+	cursor: pointer;
+	margin: -40px;
+	position: relative;
+	z-index: 10;
+	transform: translateY(-150px);
+}
+.displayButton img {
+	transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+.displayButton:hover img {
+	filter: drop-shadow(0px 2px 8px var(--gris));
+}
+.projectsButton {
+	gap: 10px;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.projectsButton :hover {
+	filter: drop-shadow(0px 2px 8px var(--verde-fondo));
+}
+.projectInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 200px;
+}
+.projectsButtonP {
+	font-size: 20px;
+	color: var(--gris);
+	width: 80%;
+	height: 100%;
+	flex-direction: column;
+	white-space: pre-line;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeAnim {
+	animation: fadeIn 0.6s ease-in-out;
+}
+
+.projectDisplay {
+	background-color: var(--gris-slider);
+	position: relative;
+}

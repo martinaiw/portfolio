@@ -1,5 +1,15 @@
 .languagesContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+@media (max-width: 1000px) {
+	.languagesContainer {
+		font-size: 28px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.languageText {
+	font-size: 39px;
 }

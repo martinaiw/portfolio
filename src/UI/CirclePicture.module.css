@@ -17,3 +17,10 @@
 	object-fit: cover;
 	display: block;
 }
+
+@media (max-width: 1000px) {
+	.circlePictureContainer {
+		width: 290px;
+		height: 290px;
+	}
+}

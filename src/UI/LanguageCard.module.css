@@ -1,17 +1,32 @@
 .languageCard {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    padding-left: 20px;
-    gap: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	padding-left: 20px;
+	gap: 20px;
 }
 
 .languageCard img {
-	height: 95px;
-	width: 95px;
+	height: 85px;
+	width: 85px;
 }
 
 .languageCard {
-    font-size: 39px;
+	font-size: 30px;
+}
+@media (min-width: 1001px) {
+	.languageCard {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+@media (max-width: 1000px) {
+	.languageCard {
+		font-size: 24px;
+	}
+	.languageCard img {
+		height: 60px;
+		width: 60px;
+	}
 }
