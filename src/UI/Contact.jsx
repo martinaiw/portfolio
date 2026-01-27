@@ -5,6 +5,7 @@ import LinkedIn from "../assets/images/LinkedIn.png";
 import CV from "../assets/images/CV.png";
 import TitleCard from "./TitleCard";
 import styles from "./Contact.module.css";
+import CVMartina from "../assets/files/CV-MIW.pdf";
 
 function Contact() {
 	return (
@@ -35,7 +36,7 @@ function Contact() {
 				></ContactButton>
 				<ContactButton
 					title="CV"
-					link="/src/assets/CV-MIW.pdf"
+					link={CVMartina}
 					image={CV}
 				></ContactButton>
 			</div>
