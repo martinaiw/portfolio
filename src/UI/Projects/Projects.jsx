@@ -1,8 +1,8 @@
 import styles from "./Projects.module.css";
-import TitleCard from "./TitleCard";
+import TitleCard from "../TitleCard";
 import ProjectsDisplay from "./ProjectsDisplay";
 import React, { useState, useEffect } from "react";
-import { useMediaQuery } from "../hooks/useMediaQuery";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 function Projects() {
 	const isMobile = useMediaQuery(1000);

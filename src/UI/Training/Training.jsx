@@ -1,10 +1,10 @@
-import styles from "./Formation.module.css";
-import FormationCard from "../UI/FormationCard.jsx";
-import TitleCard from "../UI/TitleCard";
+import styles from "./Training.module.css";
+import TrainingCard from "./TrainingCard.jsx";
+import TitleCard from "../TitleCard.jsx";
 import CertificateButton from "./CertificateButton.jsx";
-import testingManual from "../assets/images/testingManual.jpg";
+import testingManual from "../../assets/images/testingManual.jpg";
 
-function Formation() {
+function Training() {
 	return (
 		<>
 			<div>
@@ -16,21 +16,21 @@ function Formation() {
 				align="left"
 				/>
 				</div>
-			<section id="formation" className={styles.formationSection}>
-				<FormationCard
+			<section id="training" className={styles.trainingSection}>
+				<TrainingCard
 					title="Licenciatura en Ciencias de la Computación"
 					location="FaMAF - UNC"
 					startDate="2022"
 					endDate="Actualidad"
 				/>
-				<FormationCard
+				<TrainingCard
 					title="Analista en Computación"
 					location="FaMAF - UNC"
 					startDate="2022"
 					endDate="Actualidad"
 				/>
-				<div className={styles.formationAndCertificateContainer}>
-					<FormationCard
+				<div className={styles.trainingAndCertificateContainer}>
+					<TrainingCard
 						title="Certificación en Testing Manual QA"
 						location="ProgramON - chicos.net"
 						startDate="Agosto 2025"
@@ -38,8 +38,8 @@ function Formation() {
 					/>
 					<CertificateButton certificateUrl={testingManual} isLink={false} />
 				</div>
-				<div className={styles.formationAndCertificateContainer}>
-					<FormationCard
+				<div className={styles.trainingAndCertificateContainer}>
+					<TrainingCard
 						title="Certificación Avanzada en Full Stack Developer"
 						location="ITBA (Instituto Tecnológico de Buenos Aires)"
 						duration="306"
@@ -51,8 +51,8 @@ function Formation() {
 						isLink={true}
 					/>
 				</div>
-				<div className={styles.formationAndCertificateContainer}>
-					<FormationCard
+				<div className={styles.trainingAndCertificateContainer}>
+					<TrainingCard
 						title="Certificación Primera Etapa de Argentina Programa 'Sé Programar'"
 						location="Argentina Programa - Ministerio de Educación"
 						startDate="Febrero 2022"
@@ -67,4 +67,4 @@ function Formation() {
 		</>
 	);
 }
-export default Formation;
+export default Training;

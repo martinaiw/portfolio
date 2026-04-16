@@ -1,4 +1,4 @@
-import TitleCard from "./TitleCard";
+import TitleCard from "../TitleCard";
 import styles from "./Abilities.module.css";
 function Abilities() {
 	return (

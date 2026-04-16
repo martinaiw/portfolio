@@ -1,8 +1,8 @@
-import TitleCard from "./TitleCard";
+import TitleCard from "../TitleCard";
 import CirclePicture from "./CirclePicture";
 import styles from "./AboutMe.module.css";
-import ProfilePic from "../assets/images/ProfilePic.PNG";
-import { useMediaQuery } from "../hooks/useMediaQuery";
+import ProfilePic from "../../assets/images/ProfilePic.PNG";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 function AboutMe() {
 	const isMobile = useMediaQuery(1000);

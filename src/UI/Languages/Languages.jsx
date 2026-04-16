@@ -1,7 +1,7 @@
-import TitleCard from "./TitleCard.jsx";
+import TitleCard from "../TitleCard.jsx";
 import LanguageCard from "./LanguageCard.jsx";
-import es from "../assets/images/es.png";
-import en from "../assets/images/en.png";
+import es from "../../assets/images/es.png";
+import en from "../../assets/images/en.png";
 import styles from "./Languages.module.css";
 
 function Languages() {

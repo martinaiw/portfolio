@@ -1,4 +1,4 @@
-.formationSection {
+.trainingSection {
 	padding: 57px;
 	gap: 15px;
 	display: flex;
@@ -6,7 +6,7 @@
 	max-width: 1517px;
 	width: 100%;
 }
-.formationAndCertificateContainer {
+.trainingAndCertificateContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

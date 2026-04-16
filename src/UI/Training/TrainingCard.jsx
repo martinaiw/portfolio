@@ -1,8 +1,8 @@
-import styles from "./FormationCard.module.css";
+import styles from "./TrainingCard.module.css";
 
-function FormationCard({ title, location, duration, startDate, endDate }) {
+function TrainingCard({ title, location, duration, startDate, endDate }) {
 	return (
-		<div className={styles.formationCard}>
+		<div className={styles.trainingCard}>
 			<h2>{title}</h2>
 			<h3>{location}</h3>
 			{duration && (
@@ -14,4 +14,4 @@ function FormationCard({ title, location, duration, startDate, endDate }) {
 		</div>
 	);
 }
-export default FormationCard;
+export default TrainingCard;

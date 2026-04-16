@@ -1,14 +1,14 @@
-import ButtonProjects from "./ButtonProjects";
+import ButtonProjects from "../AboutMe/ButtonProjects";
 import styles from "./ProjectsDisplay.module.css";
 import React, { useState, useEffect } from "react";
 import ProjectsButton from "./ProjectsButton";
-import videoFlashcards from "../assets/videos/flashcards-app.mp4";
-import videoSwitcher from "../assets/videos/ElSwitcher.mp4";
-import t1 from "../assets/images/1.png";
-import t2 from "../assets/images/2.png";
-import t3 from "../assets/images/3.png";
-import t4 from "../assets/images/4.png";
-import t5 from "../assets/images/5.png";
+import videoFlashcards from "../../assets/videos/flashcards-app.mp4";
+import videoSwitcher from "../../assets/videos/ElSwitcher.mp4";
+import t1 from "../../assets/images/1.png";
+import t2 from "../../assets/images/2.png";
+import t3 from "../../assets/images/3.png";
+import t4 from "../../assets/images/4.png";
+import t5 from "../../assets/images/5.png";
 
 const proyectos = [
 	{

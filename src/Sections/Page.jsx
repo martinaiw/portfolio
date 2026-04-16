@@ -1,10 +1,10 @@
-import AboutMe from "../UI/AboutMe.jsx";
-import Projects from "../UI/Projects.jsx";
 import styles from "./Page.module.css";
-import Formation from "../UI/Formation.jsx";
-import Abilities from "../UI/Abilities.jsx";
-import Languages from "../UI/Languages.jsx";
-import Contact from "../UI/Contact.jsx";
+import AboutMe from "../UI/AboutMe/AboutMe.jsx";
+import Projects from "../UI/Projects/Projects.jsx";
+import Training from "../UI/Training/Training.jsx";
+import Abilities from "../UI/Abilities/Abilities.jsx";
+import Languages from "../UI/Languages/Languages.jsx";
+import Contact from "../UI/Contact/Contact.jsx";
 
 function Page() {
 	return (
@@ -14,8 +14,8 @@ function Page() {
 				<Projects />
 			</section>
 
-			<section id="formation" className={styles.pageSection2}>
-				<Formation />
+			<section id="training" className={styles.pageSection2}>
+				<Training />
 			</section>
 
 			<section id="abilities" className="pageSection2">
