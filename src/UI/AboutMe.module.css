@@ -37,7 +37,7 @@
 	width: 100%;
 	height: 100%;
 	line-height: auto;
-	color: var(--crema);
+	color: var(--gris-claro);
 	font: var(--fuente-cuerpo);
 	display: flex;
 	flex-direction: column;

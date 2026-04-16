@@ -8,8 +8,6 @@ function App() {
 	return (
 		<div className="portfolioWrapper">
 			<Page id="Page" className="pageSection" />
-			{/* <Page2 id="Page2" className="pageSection"/>
-			<Page3 id="Page3" className="pageSection"/> */}
 		</div>
 	);
 }

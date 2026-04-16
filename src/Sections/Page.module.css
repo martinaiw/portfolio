@@ -1,5 +1,7 @@
 .sectionsContainer {
+	display: flex;
 	flex-direction: column;
+
 }
 
 .pageSection1 {
@@ -17,7 +19,7 @@
 }
 
 .pageSection2 {
-	padding-top: 40px;
+	padding-top: 10px;
 }
 
 @media (max-width: 1000px) {

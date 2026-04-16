@@ -1,14 +1,38 @@
 .formationCard {
-	border-radius: 7px;
-	background-color: var(--beige);
+	border-radius: 15px;
+	background-color: var(--gris-claro);
 	width: 80%;
 	padding: 10px;
 }
+.formationCard:hover {
+	box-shadow: 0 4px 6px var(--teal);
+	animation: subtleShadowBreathing 3s ease-in-out infinite;
+	transform: scale(1.05);
+	transition: transform 0.2s ease-out;
+}
+
+.formationCard h2 {
+	color: var(--gris);
+	font: var(--fuente-cuerpo);
+	font-style: italic;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 15px;
+}
+.formationCard h3 {
+	color: var(--gris);
+	font: var(--fuente-cuerpo);
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 15px;
+}
 .formationCard p,
-.formationCard h2,
 .durationCard p {
 	color: var(--gris);
 	font: var(--fuente-cuerpo);
+	padding-left: 15px;
 }
 
 .formationCard p {
@@ -16,8 +40,3 @@
 	margin: 0;
 }
 
-.formationCard h2 {
-	font-size: 32px;
-	font-weight: bold;
-	margin: 0;
-}

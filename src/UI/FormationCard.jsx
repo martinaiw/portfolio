@@ -4,7 +4,7 @@ function FormationCard({ title, location, duration, startDate, endDate }) {
 	return (
 		<div className={styles.formationCard}>
 			<h2>{title}</h2>
-			<p>{location}</p>
+			<h3>{location}</h3>
 			{duration && (
 				<p className="durationTag">Duración: {duration} hs</p>
 			)}

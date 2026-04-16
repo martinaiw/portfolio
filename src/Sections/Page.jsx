@@ -13,6 +13,7 @@ function Page() {
 				<AboutMe />
 				<Projects />
 			</section>
+
 			<section id="formation" className={styles.pageSection2}>
 				<Formation />
 			</section>
@@ -20,14 +21,14 @@ function Page() {
 			<section id="abilities" className="pageSection2">
 				<Abilities />
 			</section>
-			
-            <section id="languages" className="pageSection3">
-                <Languages />
-            </section>
 
-            <section id="contact" className="pageSection4">
-                <Contact />
-            </section> 
+			<section id="languages" className="pageSection3">
+				<Languages />
+			</section>
+
+			<section id="contact" className="pageSection4">
+				<Contact />
+			</section>
 		</div>
 	);
 }

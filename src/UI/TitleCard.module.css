@@ -1,5 +1,5 @@
 .titleCardContainer {
-	background-color: #ecedb0;
+	background-color: var(--gris-claro);
 	height: 76px;
 	width: var(--card-width, auto);
 	display: flex;
