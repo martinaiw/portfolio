@@ -3,11 +3,12 @@
 	background-color: var(--gris-claro);
 	width: 80%;
 	padding: 10px;
+	transition: transform 0.2s ease-out;
 }
 .trainingCard:hover {
-	box-shadow: 0 4px 6px var(--teal);
-	animation: subtleShadowBreathing 3s ease-in-out infinite;
-	transform: scale(1.05);
+	box-shadow: 2px 2px 18px 3px var(--teal);
+	animation: box-shadow 2s ease-in-out infinite;
+	transform: scale(1.01);
 	transition: transform 0.2s ease-out;
 }
 
@@ -23,7 +24,7 @@
 .trainingCard h3 {
 	color: var(--gris);
 	font: var(--fuente-cuerpo);
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	margin: 0;
 	padding-left: 15px;
@@ -36,7 +37,6 @@
 }
 
 .trainingCard p {
-	font-size: 22px;
+	font-size: 16px;
 	margin: 0;
 }
-

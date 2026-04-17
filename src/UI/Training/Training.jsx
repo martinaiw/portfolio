@@ -8,27 +8,33 @@ function Training() {
 	return (
 		<>
 			<div>
-
-			<TitleCard
-				title="Mi formación"
-				width="562px"
-				fontSize="46px"
-				align="left"
+				<TitleCard
+					title="Mi formación"
+					width="562px"
+					fontSize="46px"
+					align="left"
 				/>
-				</div>
+			</div>
 			<section id="training" className={styles.trainingSection}>
 				<TrainingCard
 					title="Licenciatura en Ciencias de la Computación"
 					location="FaMAF - UNC"
 					startDate="2022"
-					endDate="Actualidad"
+					endDate="En Curso"
 				/>
-				<TrainingCard
-					title="Analista en Computación"
-					location="FaMAF - UNC"
-					startDate="2022"
-					endDate="Actualidad"
-				/>
+				<div className={styles.trainingAndCertificateContainer}>
+					<TrainingCard
+						title="Analista en Computación"
+						location="FaMAF - UNC"
+						startDate="2022"
+						endDate="2026"
+					/>
+					<CertificateButton
+						certificateUrl={null}
+						isLink={false}
+						isCertificateAvailable={false}
+					/>
+				</div>
 				<div className={styles.trainingAndCertificateContainer}>
 					<TrainingCard
 						title="Certificación en Testing Manual QA"
@@ -36,7 +42,11 @@ function Training() {
 						startDate="Agosto 2025"
 						endDate="Septiembre 2025"
 					/>
-					<CertificateButton certificateUrl={testingManual} isLink={false} />
+					<CertificateButton
+						certificateUrl={testingManual}
+						isLink={false}
+						isCertificateAvailable={true}
+					/>
 				</div>
 				<div className={styles.trainingAndCertificateContainer}>
 					<TrainingCard
@@ -49,6 +59,7 @@ function Training() {
 					<CertificateButton
 						certificateUrl="https://certtun.vottun.com/badgedetail?id=71c51ace-cff3-4313-8bdf-639ed1fa52c9"
 						isLink={true}
+						isCertificateAvailable={true}
 					/>
 				</div>
 				<div className={styles.trainingAndCertificateContainer}>
@@ -61,6 +72,7 @@ function Training() {
 					<CertificateButton
 						certificateUrl="https://mumuki.io/argentina-programa/certificates/verify/G3hgTEiuj_IrwYEn"
 						isLink={true}
+						isCertificateAvailable={true}
 					/>
 				</div>
 			</section>

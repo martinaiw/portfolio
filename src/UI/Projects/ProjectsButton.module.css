@@ -12,9 +12,11 @@
 	font-size: 24px;
 	border-radius: 7px;
 	font: var(--fuente-cuerpo);
-    font-weight: bold;
+	font-weight: bold;
 }
-
+.projectsButtonContainer:hover {
+	box-shadow: 0px 0px 9px 1px var(--teal);
+}
 a {
 	color: var(--gris);
 	text-decoration: none;
@@ -27,4 +29,3 @@ a {
 .noPointer a {
 	cursor: default !important;
 }
-

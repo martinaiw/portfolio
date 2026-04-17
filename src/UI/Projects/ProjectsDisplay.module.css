@@ -39,10 +39,12 @@
 }
 .displayButton img {
 	transition: filter 0.2s ease, opacity 0.2s ease;
+	filter: drop-shadow(0px 2px 8px var(--gris));
+
 }
 
 .displayButton:hover img {
-	filter: drop-shadow(0px 2px 8px var(--gris));
+	filter: drop-shadow(0px 2px 8px var(--teal));
 }
 .projectsButton {
 	gap: 10px;
@@ -53,9 +55,6 @@
 	padding-top: 20px;
 }
 
-.projectsButton :hover {
-	filter: drop-shadow(0px 2px 8px var(--verde-fondo));
-}
 .projectInfo {
 	display: flex;
 	flex-direction: column;
