@@ -5,6 +5,7 @@ import Training from "../UI/Training/Training.jsx";
 import Abilities from "../UI/Abilities/Abilities.jsx";
 import Languages from "../UI/Languages/Languages.jsx";
 import Contact from "../UI/Contact/Contact.jsx";
+import Experience from "../UI/Experience/Experience.jsx";
 
 function Page() {
 	return (
@@ -12,6 +13,10 @@ function Page() {
 			<section className={styles.pageSection1}>
 				<AboutMe />
 				<Projects />
+			</section>
+
+			<section id="experience">
+				<Experience />
 			</section>
 
 			<section id="training" className={styles.pageSection2}>

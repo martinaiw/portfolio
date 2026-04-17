@@ -1,0 +1,52 @@
+.experienceCard {
+	border-radius: 15px;
+	background-color: var(--gris-claro);
+	width: 80%;
+	padding: 10px;
+	transition: transform 0.2s ease-out;
+}
+.experienceCard:hover {
+	box-shadow: 2px 2px 18px 3px var(--teal);
+	animation: box-shadow 2s ease-in-out infinite;
+	transform: scale(1.01);
+	transition: transform 0.2s ease-out;
+}
+
+.experienceCard h2 {
+	color: var(--gris);
+	font: var(--fuente-cuerpo);
+	font-style: italic;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 15px;
+}
+.experienceCard h3 {
+	color: var(--gris);
+	font: var(--fuente-cuerpo);
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 15px;
+}
+.experienceCard p {
+	color: var(--gris);
+	font: var(--fuente-cuerpo);
+	padding-left: 15px;
+	font-size: 16px;
+	margin: 0;
+}
+.experienceDescription {
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+.experienceDescription p {
+	margin-left: -10px;
+}
+.experienceDescription span {
+	background-color: var(--teal);
+	width: 10px;
+	height: auto;
+}

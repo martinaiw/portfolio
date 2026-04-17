@@ -1,0 +1,16 @@
+.experienceContainer {
+	padding-left: 57px;
+	padding-top: 57px;
+	padding-bottom: 47px;
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
+	max-width: 1460px;
+	width: 100%;
+}
+.experienceContainer p {
+	font-size: 18px;
+	line-height: 28px;
+	margin: 8px;
+}
+

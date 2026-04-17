@@ -10,7 +10,7 @@ function Training() {
 			<div>
 				<TitleCard
 					title="Mi formación"
-					width="562px"
+					width="480px"
 					fontSize="46px"
 					align="left"
 				/>
