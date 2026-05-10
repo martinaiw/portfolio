@@ -35,7 +35,7 @@ function Contact() {
 				></ContactButton>
 				<ContactButton
 					title="CV"
-					link="/portfolio/files/CV-MIW.pdf"
+					link="/portfolio/files/CV_MartinaIbanez.pdf"
 					image={CV}
 				></ContactButton>
 			</div>
