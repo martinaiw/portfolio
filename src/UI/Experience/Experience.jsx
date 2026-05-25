@@ -16,13 +16,13 @@ function Experience() {
 					title="GAOTek Inc."
 					location="Pasante en el puesto de Web Uploading"
 					startDate="Enero 2026"
-					endDate="Actualidad"
+					endDate="Junio 2026"
 					description={
 						<p>
-							Durante esta pasantía, estoy adquiriendo nuevos conocimientos y
-							mejorando mis habilidades en desarrollo web, incluyendo el uso de
-							WordPress, JavaScript, HTML, CSS y React, además de mejorar mis
-							capacidades de trabajo en equipo.
+							Durante esta pasantía, adquirí nuevos conocimientos y mejoré mis
+							habilidades en desarrollo web, incluyendo el uso de WordPress,
+							JavaScript, HTML, CSS y React, además de mejorar mis capacidades
+							de trabajo en equipo.
 						</p>
 					}
 				/>
