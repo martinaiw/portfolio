@@ -1,16 +1,35 @@
 .experienceContainer {
-	padding-left: 57px;
-	padding-top: 57px;
-	padding-bottom: 47px;
-	gap: 15px;
+	padding-top: 40px;
+}
+
+.experienceSection {
 	display: flex;
 	flex-direction: column;
-	max-width: 1460px;
-	width: 100%;
+	align-items: center;
+	gap: 20px;
+	max-width: 1517px;
+	padding: 57px;
+	/* border: 2px blue solid; */
 }
+
 .experienceContainer p {
 	font-size: 18px;
 	line-height: 28px;
 	margin: 8px;
 }
 
+.certificatesContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.experienceAndCertificateContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	gap: 20px;
+}
