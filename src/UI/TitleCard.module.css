@@ -1,26 +1,25 @@
-.titleCardContainer {
-	background-color: var(--gris-claro);
-	height: 76px;
-	width: fit-content;
-	display: flex;
-	justify-content: var(--flex-align, left);
-	align-items: center;
-	padding-left: 0px;
+.label {
+  display: inline-flex;
+  align-items: center;
+  background: var(--title-bg);
+  color: var(--title-fg);
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin-bottom: 1.5rem;
 }
-.titleCardContainer h2 {
-	margin: 5px;
-	font-size: 46px;
-	color: var(--gris);
-	font-family: var(--fuente-titulo);
-	text-align: var(--text-align, left);
-	line-height: 1;
-	width: 100%;
-	padding: 30px;
+
+.title {
+  font-size: 1.875rem;
+  color: #eeeeee;
+  margin: 0 0 2.5rem 0;
+  white-space: pre-line;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-	.titleCardContainer h2 {
-		font-size: clamp(32px, 6vw, 36px) !important;
-		word-break: break-word;
-		text-wrap: pretty;
-	}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
 }

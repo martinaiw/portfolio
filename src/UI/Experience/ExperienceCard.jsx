@@ -1,21 +1,15 @@
-import styles from "./ExperienceCard.module.css";
+import styles from './ExperienceCard.module.css'
 
-function ExperienceCard({ title, location, startDate, endDate, description }) {
-	return (
-		<>
-			<div className={styles.experienceCard}>
-				<h2>{title}</h2>
-				<h3>{location}</h3>
-				<p>
-					{startDate} - {endDate}{" "}
-				</p>
-				<div className={styles.experienceDescription}>
-					<span></span>
-					<p>{description}</p>
-				</div>
-			</div>
-		</>
-	);
+export default function ExperienceCard({ item }) {
+  return (
+    <div className={styles.item}>
+      <div className={styles.dot} />
+      <div className={styles.header}>
+        <h3 className={styles.role}>{item.role}</h3>
+        <span className={styles.period}>{item.period}</span>
+      </div>
+      <p className={styles.company}>{item.company}</p>
+      <p className={styles.desc}>{item.desc}</p>
+    </div>
+  )
 }
-
-export default ExperienceCard;

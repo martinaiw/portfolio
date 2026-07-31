@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
  * @param {number} width - El ancho en píxeles (ej: 1000)
  * @returns {boolean} - true si la pantalla es menor al ancho, false si es mayor.
  */
-export function useMediaQuery(width) {
+function useMediaQuery(width) {
   const [targetReached, setTargetReached] = useState(false);
 
   useEffect(() => {
@@ -25,3 +25,4 @@ export function useMediaQuery(width) {
 
   return targetReached;
 }
+export default useMediaQuery;

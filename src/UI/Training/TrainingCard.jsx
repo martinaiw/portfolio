@@ -1,21 +1,18 @@
-import styles from "./TrainingCard.module.css";
+import CertificateButton from './CertificateButton'
+import styles from './TrainingCard.module.css'
 
-function TrainingCard({
-	title,
-	location,
-	duration,
-	startDate,
-	endDate,
-}) {
-	return (
-		<div className={styles.trainingCard}>
-			<h2>{title}</h2>
-			<h3>{location}</h3>
-			{duration && <p className="durationTag">Duración: {duration} hs</p>}
-			<p>
-				{startDate} - {endDate}{" "}
-			</p>
-		</div>
-	);
+export default function TrainingCard({ item, certLabel }) {
+  return (
+    <div className={styles.card}>
+      <div className={styles.yearCol}>
+        <p className={styles.year}>{item.year}</p>
+      </div>
+      <div className={styles.contentCol}>
+        <h3 className={styles.degree}>{item.degree}</h3>
+        <p className={styles.institution}>{item.institution}</p>
+        <p className={styles.note}>{item.note}</p>
+        {item.cert && <CertificateButton href={item.cert} label={certLabel} />}
+      </div>
+    </div>
+  )
 }
-export default TrainingCard;

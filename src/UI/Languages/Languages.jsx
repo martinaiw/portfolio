@@ -1,31 +1,21 @@
-import TitleCard from "../TitleCard.jsx";
-import LanguageCard from "./LanguageCard.jsx";
-import es from "../../assets/images/es.png";
-import en from "../../assets/images/en.png";
-import styles from "./Languages.module.css";
+import TitleCard from '../TitleCard'
+import LanguageCard from './LanguageCard'
+import styles from './Languages.module.css'
 
-function Languages() {
-	return (
-		<>
-			<TitleCard title="Idiomas"
-				width="341px"
-				fontSize="46px"
-				align="left"
-				paddingLeft="20px"
-			></TitleCard>
-			<div className={styles.languagesContainer}>
-				<LanguageCard
-					language="Español"
-					proficiency="Nativo"
-					image={es}
-				></LanguageCard>
-				<LanguageCard
-					language="Inglés"
-					proficiency="Nivel Avanzado / Competencia Profesional"
-					image={en}
-				></LanguageCard>
-			</div>
-		</>
-	);
+export default function Languages({ t, lang, languages }) {
+  return (
+    <section id="languages" className={`${styles.section}`}>
+      <div className={styles.wrapper}>
+        <div>
+          <TitleCard label={t.langLabel} title={t.langTitle} />
+          <p className={styles.sub}>{t.langSub}</p>
+        </div>
+        <div className={styles.list}>
+          {languages.map((language) => (
+            <LanguageCard key={language.name.en} language={language} lang={lang} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
-export default Languages;

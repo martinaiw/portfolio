@@ -1,12 +1,6 @@
-import "./App.css";
-import Page from "./Sections/Page.jsx";
+import Page from './Sections/Page'
+import './App.css'
 
-function App() {
-	return (
-		<div className="portfolioWrapper">
-			<Page id="Page" className="pageSection" />
-		</div>
-	);
+export default function App() {
+  return <Page />
 }
-
-export default App;

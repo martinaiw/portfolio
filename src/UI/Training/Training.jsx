@@ -1,82 +1,18 @@
-import styles from "./Training.module.css";
-import TrainingCard from "./TrainingCard.jsx";
-import TitleCard from "../TitleCard.jsx";
-import CertificateButton from "./CertificateButton.jsx";
-import testingManual from "../../assets/images/testingManual.jpg";
+import TitleCard from '../TitleCard'
+import TrainingCard from './TrainingCard'
+import styles from './Training.module.css'
 
-function Training() {
-	return (
-		<>
-			<div>
-				<TitleCard
-					title="Mi formación"
-					width="480px"
-					fontSize="46px"
-					align="left"
-				/>
-			</div>
-			<section id="training" className={styles.trainingSection}>
-				<TrainingCard
-					title="Licenciatura en Ciencias de la Computación"
-					location="FaMAF - UNC"
-					startDate="2022"
-					endDate="En Curso"
-				/>
-				<div className={styles.trainingAndCertificateContainer}>
-					<TrainingCard
-						title="Analista en Computación"
-						location="FaMAF - UNC"
-						startDate="2022"
-						endDate="2026"
-					/>
-					<CertificateButton
-						certificateUrl={null}
-						isLink={false}
-						isCertificateAvailable={false}
-					/>
-				</div>
-				<div className={styles.trainingAndCertificateContainer}>
-					<TrainingCard
-						title="Certificación en Testing Manual QA"
-						location="ProgramON - chicos.net"
-						startDate="Agosto 2025"
-						endDate="Septiembre 2025"
-					/>
-					<CertificateButton
-						certificateUrl={testingManual}
-						isLink={false}
-						isCertificateAvailable={true}
-					/>
-				</div>
-				<div className={styles.trainingAndCertificateContainer}>
-					<TrainingCard
-						title="Certificación Avanzada en Full Stack Developer"
-						location="ITBA (Instituto Tecnológico de Buenos Aires)"
-						duration="306"
-						startDate="Agosto 2023"
-						endDate="Noviembre 2023"
-					/>
-					<CertificateButton
-						certificateUrl="https://certtun.vottun.com/badgedetail?id=71c51ace-cff3-4313-8bdf-639ed1fa52c9"
-						isLink={true}
-						isCertificateAvailable={true}
-					/>
-				</div>
-				<div className={styles.trainingAndCertificateContainer}>
-					<TrainingCard
-						title="Certificación Primera Etapa de Argentina Programa 'Sé Programar'"
-						location="Argentina Programa - Ministerio de Educación"
-						startDate="Febrero 2022"
-						endDate="Abril 2022"
-					/>
-					<CertificateButton
-						certificateUrl="https://mumuki.io/argentina-programa/certificates/verify/G3hgTEiuj_IrwYEn"
-						isLink={true}
-						isCertificateAvailable={true}
-					/>
-				</div>
-			</section>
-		</>
-	);
+export default function Training({ t, formation }) {
+  return (
+    <section id="formation" className={`${styles.section}`}>
+      <div className={styles.wrapper}>
+        <TitleCard label={t.formLabel} title={t.formTitle} />
+        <div className={styles.list}>
+          {formation.map((item, i) => (
+            <TrainingCard key={i} item={item} certLabel={t.viewCert} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
-export default Training;

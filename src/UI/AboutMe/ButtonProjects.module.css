@@ -1,0 +1,28 @@
+.primary,
+.secondary {
+  padding: 0.625rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.primary {
+  background-color: var(--accent-solid);
+  color: #1e1e1e;
+}
+
+.primary:hover {
+  opacity: 0.85;
+}
+
+.secondary {
+  background: transparent;
+  border-color: var(--border-accent);
+  color: var(--accent-solid);
+}
+
+.secondary:hover {
+  border-color: var(--accent-solid);
+}

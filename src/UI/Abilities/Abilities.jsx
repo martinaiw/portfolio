@@ -1,38 +1,24 @@
-import TitleCard from "../TitleCard";
-import styles from "./Abilities.module.css";
-function Abilities() {
-	return (
-		<>
-			<TitleCard
-				title="Mis habilidades"
-				width="556px"
-				fontSize="46px"
-				align="left"
-				paddingLeft="20px"
-			></TitleCard>
-			<div className={styles.abilitiesContainer}>
-				<ul className={styles.abilitiesText}>
-					<li>
-						<strong>Lenguajes de programación:</strong> C, C++, Python,
-						JavaScript, Haskell.
-					</li>
-					<li>
-						<strong>Desarrollo Web:</strong> React, HTML, CSS.
-					</li>
-					<li>
-						<strong>Bases de Datos:</strong> SQL, NoSQL (MongoDB).
-					</li>
+import TitleCard from '../TitleCard'
+import styles from './Abilities.module.css'
 
-					<li>
-						<strong>Control de versiones:</strong> Git, GitHub, Bitbucket.
-					</li>
-					<li>
-						<strong>Gestión de proyectos y QA: </strong> Jira, Azure DevOps
-						(Reporte de bugs).
-					</li>
-				</ul>
-			</div>
-		</>
-	);
+export default function Abilities({ t, groups }) {
+  return (
+    <section id="abilities" className={styles.section}>
+      <div className={styles.wrapper}>
+        <TitleCard label={t.abilitiesLabel} title={t.abilitiesTitle} />
+        <div className={styles.grid}>
+          {groups.map((group) => (
+            <div key={group.label}>
+              <p className={styles.groupLabel}>{group.label}</p>
+              <ul className={styles.list}>
+                {group.items.map((item) => (
+                  <li key={item} className={styles.listItem}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
-export default Abilities;

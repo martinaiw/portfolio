@@ -1,22 +1,71 @@
-.abilitiesContainer {
-	font: var(--fuente-cuerpo);
+.section {
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.abilitiesText {
-	font-size: 30px;
-	gap: 15px;
+
+.wrapper {
+  max-width: 56rem;
+  width: 100%;
 }
-ul {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	padding-left: 60px;
+
+.grid {
+  display: grid;
+  gap: 2rem;
 }
-@media (max-width: 1000px) {
-	.abilitiesText {
-		font-size: 28px;
-	}
-	unorderedList {
-		padding-left: 30px;
-		gap: 12px;
-	}
+
+.groupLabel {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-solid);
+  margin: 0 0 1.25rem 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.875rem;
+  color: var(--fg);
+  line-height: 1.5;
+}
+
+.listItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent-solid);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 5rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 5rem 6rem;
+  }
 }

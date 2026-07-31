@@ -1,0 +1,45 @@
+.wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.circleLarge {
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 1px solid var(--border-accent);
+  opacity: 0.35;
+}
+
+.circleSmall {
+  position: absolute;
+  bottom: -80px;
+  right: 140px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  opacity: 0.5;
+}
+
+.glow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 33%;
+  background: linear-gradient(135deg, transparent 40%, rgba(15, 184, 184, 0.04) 100%);
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .glow {
+    display: block;
+  }
+}

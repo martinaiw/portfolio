@@ -1,58 +1,58 @@
-.experienceCard {
-	border-radius: 15px;
-	background-color: var(--gris-claro);
-	width: 80%;
-	padding: 10px;
-	transition: transform 0.2s ease-out;
+.item {
+  position: relative;
+  padding-left: 2rem;
+  padding-bottom: 2.5rem;
 }
 
-.experienceCard:hover {
-	box-shadow: 2px 2px 18px 3px var(--teal);
-	animation: box-shadow 2s ease-in-out infinite;
-	transform: scale(1.01);
-	transition: transform 0.2s ease-out;
+.dot {
+  position: absolute;
+  left: -2px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-solid);
 }
 
-.experienceCard h2 {
-	color: var(--gris);
-	font: var(--fuente-cuerpo);
-	font-style: italic;
-	font-size: 28px;
-	font-weight: bold;
-	margin: 0;
-	padding-left: 15px;
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.experienceCard h3 {
-	color: var(--gris);
-	font: var(--fuente-cuerpo);
-	font-size: 18px;
-	font-weight: bold;
-	margin: 0;
-	padding-left: 15px;
+.role {
+  font-family: 'Krona One', sans-serif;
+  font-size: 1rem;
+  color: #eeeeee;
+  margin: 0;
 }
 
-.experienceCard p {
-	color: var(--gris);
-	font: var(--fuente-cuerpo);
-	padding-left: 15px;
-	font-size: 16px;
-	margin: 0;
+.period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--fg-muted);
+  flex-shrink: 0;
 }
 
-.experienceDescription {
-	display: flex;
-	flex-direction: row;
-	padding-top: 10px;
-	padding-left: 15px;
+.company {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent-solid);
+  margin: 0 0 0.25rem 0;
 }
 
-.experienceDescription p {
-	margin-left: -10px;
+.desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--fg-muted);
+  margin: 0;
 }
 
-.experienceDescription span {
-	background-color: var(--teal);
-	width: 10px;
-	height: auto;
+@media (min-width: 640px) {
+  .header {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }

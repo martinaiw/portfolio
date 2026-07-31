@@ -1,10 +1,9 @@
-import styles from "./CirclePicture.module.css";
+import styles from './CirclePicture.module.css'
 
-function CirclePicture({ image, alt }) {
-	return (
-		<div className={styles.circlePictureContainer}>
-			<img src={image} alt={alt} className={styles.circlePicture} />
-		</div>
-	);
+export default function CirclePicture({ src, alt = 'Profile picture', initials = 'AJ' }) {
+  return (
+    <div className={styles.circle}>
+      {src ? <img src={src} alt={alt} className={styles.image} /> : <span className={styles.initials}>{initials}</span>}
+    </div>
+  )
 }
-export default CirclePicture;

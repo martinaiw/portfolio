@@ -1,11 +1,10 @@
-import styles from "./TitleCard.module.css";
+import styles from './TitleCard.module.css'
 
-function TitleCard({ title }) {
-	return (
-		<div className={styles.titleCardContainer}>
-			<h2>{title}</h2>
-		</div>
-	);
+export default function TitleCard({ label, title }) {
+  return (
+    <>
+      <span className={styles.label}>{label}</span>
+      <h2 className={styles.title}>{title}</h2>
+    </>
+  )
 }
-
-export default TitleCard;
