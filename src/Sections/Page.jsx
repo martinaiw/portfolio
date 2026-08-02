@@ -10,7 +10,13 @@ import Contact from "../UI/Contact/Contact";
 import styles from "./Page.module.css";
 import testingManual from "../assets/images/testingManual.jpg";
 import MoreAboutMe from "../UI/AboutMe/MoreAboutMe";
-
+import videoFlashcards from '../assets/videos/flashcards-app.mp4'
+import videoSwitcher from '../assets/videos/ElSwitcher.mp4'
+import lumbricina1 from '../assets/images/1.png'
+import lumbricina2 from '../assets/images/2.png'
+import lumbricina3 from '../assets/images/3.png'
+import lumbricina4 from '../assets/images/4.png'
+import lumbricina5 from '../assets/images/5.png'
 /* ─── i18n ──────────────────────────────────────────────────── */
 
 const T = {
@@ -48,6 +54,13 @@ const T = {
 		stats: [],
 		projectsLabel: "Projects",
 		projectsTitle: "My work",
+		projectLinks: {
+			gh: 'GitHub',
+			demo: 'Live demo',
+			j1: 'Play v1',
+			j2: 'Play final version',
+			doc: 'View technical report',
+		  },
 		expLabel: "Experience",
 		expTitle: "Work history",
 		formLabel: "Formation",
@@ -103,6 +116,13 @@ const T = {
 		stats: [],
 		projectsLabel: "Proyectos",
 		projectsTitle: "Mis trabajos",
+		projectLinks: {
+			gh: 'GitHub',
+			demo: 'Demo en vivo',
+			j1: 'Ver Juego V1',
+			j2: 'Ver Juego Final',
+			doc: 'Ver Informe Técnico',
+		  },
 		expLabel: "Experiencia",
 		expTitle: "Historial laboral",
 		formLabel: "Formación",
@@ -143,24 +163,68 @@ const SECTION_IDS = [
 
 const PROJECTS = {
 	en: [
-		{
-			id: "",
-			title: "Oops! This project is still under construction.",
-			year: "",
-			desc: "",
-			tags: [],
-		},
+	  {
+		id: 1,
+		video: videoFlashcards,
+		titulo: 'Flashcards App',
+		linkGH: 'https://github.com/martinaiw/flashcards-app',
+		link: 'https://flashcards-app-opal.vercel.app/',
+		descripcion: 'A small app to study for exams by simulating flashcards.',
+		hechoCon: 'Built with Vite + React',
+	  },
+	  {
+		id: 2,
+		video: videoSwitcher,
+		titulo: 'El Switcher',
+		linkGH: 'https://github.com/LavajabonSinRopa',
+		link: '',
+		descripcion: 'Group project for the Software Engineering course. \n A physical board game reimagined in digital form.',
+		hechoCon: 'Built with React + Python',
+	  },
+	  {
+		id: 3,
+		images: [lumbricina1, lumbricina2, lumbricina3, lumbricina4, lumbricina5],
+		video: null,
+		titulo: 'Testing QA & Quality Management: Lumbricina Project',
+		linkJ1: 'https://nahual.github.io/qc-lumbricina/?v=1',
+		linkJ2: 'https://nahual.github.io/qc-lumbricina/',
+		linkDoc: '/portfolio/files/TpFinal_TestingQA.pdf',
+		descripcion: 'Manual testing planning and execution on the Lumbricina game. \n Identified discrepancies between the spec and the source code, documenting test cases and managing the defect backlog in Azure.',
+		hechoCon: 'Tools: Azure DevOps, documentation in Google Docs',
+	  },
 	],
 	es: [
-		{
-			id: "",
-			title: "Ups! Este proyecto todavía está en construcción.",
-			year: "",
-			desc: "",
-			tags: [],
-		},
+	  {
+		id: 1,
+		video: videoFlashcards,
+		titulo: 'Flashcards App',
+		linkGH: 'https://github.com/martinaiw/flashcards-app',
+		link: 'https://flashcards-app-opal.vercel.app/',
+		descripcion: ' Mini app para estudiar el teórico de una materia simulando flashcards.',
+		hechoCon: 'Hecha con Vite + React',
+	  },
+	  {
+		id: 2,
+		video: videoSwitcher,
+		titulo: 'El Switcher',
+		linkGH: 'https://github.com/LavajabonSinRopa',
+		link: '',
+		descripcion: 'Proyecto grupal de la materia Ingeniería del Software. \n Juego de mesa físico repensado en formato digital.',
+		hechoCon: 'Hecho con React + Python',
+	  },
+	  {
+		id: 3,
+		images: [lumbricina1, lumbricina2, lumbricina3, lumbricina4, lumbricina5],
+		video: null,
+		titulo: 'Testing QA & Gestión de Calidad: Proyecto Lumbricina',
+		linkJ1: 'https://nahual.github.io/qc-lumbricina/?v=1',
+		linkJ2: 'https://nahual.github.io/qc-lumbricina/',
+		linkDoc: '/portfolio/files/TpFinal_TestingQA.pdf',
+		descripcion: 'Planificación y ejecución de testing manual sobre el juego Lumbricina. \n Identifiqué discrepancias entre la especificación y el código fuente, documentando casos de prueba y gestionando el backlog de defectos en Azure.',
+		hechoCon: 'Herramientas: Azure DevOps, documentación en Google Docs',
+	  },
 	],
-};
+  }
 
 const EXPERIENCE = {
 	en: [

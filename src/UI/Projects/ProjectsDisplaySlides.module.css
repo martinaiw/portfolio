@@ -1,0 +1,161 @@
+.sliderContainer {
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  .projectDisplay {
+	flex-grow: 1;
+	height: 80vh;
+	width: 100%;
+	background-color: var(--gris-slider);
+	overflow: hidden;
+	display: flex;
+	flex-shrink: 0;
+	position: relative;
+  }
+  
+  .projectDisplay video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+  }
+  
+  .projectDisplay h3 {
+	color: var(--gris);
+	font-size: clamp(18px, 4vw, 24px);
+	margin-bottom: 10px;
+	padding-left: 20px;
+	align-self: center;
+	padding-right: 20px;
+  }
+  
+  .displayButton {
+	background-color: transparent;
+	cursor: pointer;
+	margin: -40px;
+	position: relative;
+	z-index: 10;
+	transform: translateY(-150px);
+  }
+  
+  .projectsButton {
+	gap: 10px;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+  }
+  
+  .projectInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 250px;
+  }
+  
+  .projectsButtonP {
+	font-size: clamp(9px, 2.5vh, 18px);
+	color: var(--gris);
+	width: 80%;
+	height: 100%;
+	flex-direction: column;
+	white-space: pre-line;
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: translateY(5px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .fadeAnim {
+	animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .mediaContainer {
+	flex-grow: 1;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: #000;
+  }
+  
+  .mediaContainer video,
+  .carouselImg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+  }
+  
+  .carouselWrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  
+  .carouselControls {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	background: var(--gris);
+	padding: 8px 20px;
+	border-radius: 30px;
+	color: white;
+	font-family: var(--fuente-cuerpo);
+	z-index: 5;
+  }
+  
+  .carouselControls button {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	transition: color 0.2s;
+  }
+  
+  .carouselControls button:hover {
+	color: var(--verde-fondo);
+  }
+  
+  @media (max-width: 768px) {
+	.sliderContainer {
+	  flex-direction: column;
+	  align-items: stretch;
+	}
+  
+	.displayButton {
+	  margin: 0;
+	  transform: none;
+	  align-self: center;
+	}
+  
+	.projectDisplay {
+	  flex-direction: column;
+	  height: auto;
+	}
+  
+	.mediaContainer {
+	  height: 40vh;
+	}
+  
+	.projectInfo {
+	  max-width: 100%;
+	  padding: 1.5rem 1rem;
+	}
+  }

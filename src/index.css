@@ -1,52 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
 
 :root {
-  --bg: #1e1e1e;
-  --bg-card: #252525;
-  --bg-card-2: #2c2c2c;
-  --title-bg: #eeeeee;
-  --title-fg: #1e1e1e;
-  --fg: #d8d8d8;
-  --fg-muted: #888888;
-  --accent: rgba(15, 184, 184, 0.644);
-  --accent-solid: #0fb8b8;
-  --accent-glow: rgba(15, 184, 184, 0.15);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-accent: rgba(15, 184, 184, 0.3);
+	--bg: #1e1e1e;
+	--bg-card: #252525;
+	--bg-card-2: #2c2c2c;
+	--title-bg: #eeeeee;
+	--title-fg: #1e1e1e;
+	--fg: #d8d8d8;
+	--fg-muted: #888888;
+	--accent: rgba(15, 184, 184, 0.644);
+	--accent-solid: #0fb8b8;
+	--accent-glow: rgba(15, 184, 184, 0.15);
+	--border: rgba(255, 255, 255, 0.08);
+	--border-accent: rgba(15, 184, 184, 0.3);
+	--gris: var(--fg-muted);
+	--gris-slider: var(--bg-card);
+	--teal: var(--accent-solid);
+	--verde-fondo: var(--accent-solid);
+	--fuente-cuerpo: "IBM Plex Sans", sans-serif;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--fg);
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
+	background-color: var(--bg);
+	color: var(--fg);
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Krona One', sans-serif;
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Krona One", sans-serif;
+	font-weight: 400;
+	line-height: 1.1;
+	letter-spacing: -0.01em;
 }
 
-button, input, textarea {
-  font-family: inherit;
+button,
+input,
+textarea {
+	font-family: inherit;
 }
 
 ::selection {
-  background: var(--accent-solid);
-  color: #1e1e1e;
+	background: var(--accent-solid);
+	color: #1e1e1e;
 }
