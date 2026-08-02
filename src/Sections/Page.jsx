@@ -9,6 +9,7 @@ import Abilities from "../UI/Abilities/Abilities";
 import Contact from "../UI/Contact/Contact";
 import styles from "./Page.module.css";
 import testingManual from "../assets/images/testingManual.jpg";
+import MoreAboutMe from "../UI/AboutMe/MoreAboutMe";
 
 /* ─── i18n ──────────────────────────────────────────────────── */
 
@@ -23,6 +24,7 @@ const T = {
 			"Languages",
 			"Abilities",
 			"Contact",
+			"A little more about me!",
 		],
 		available: "computer systems analyst",
 		heroSub:
@@ -31,10 +33,18 @@ const T = {
 		contactMe: "Contact me",
 		scrollHint: "scroll to explore",
 		aboutLabel: "About me",
-		aboutTitle: "I'm passionate about creating efficient and elegant solutions.",
-		aboutP1: "Thanks to my education at FaMAF-UNC, I have a strong foundation in logical thinking and mathematics, ",
-		aboutP2: "Possessing a meticulous and detail-oriented nature, I apply it rigorously in all my activities.",
-		aboutP3: "My goal is to deliver solutions that not only work, but are polished to the highest degree :)",
+		aboutTitle:
+			"I'm passionate about creating efficient and elegant solutions.",
+		aboutP1:
+			"Thanks to my education at FaMAF-UNC, I have a strong foundation in logical thinking and mathematics, ",
+		aboutP2:
+			"Possessing a meticulous and detail-oriented nature, I apply it rigorously in all my activities.",
+		aboutP3:
+			"My goal is to deliver solutions that not only work, but are polished to the highest degree :)",
+		moreLabel: "A little more about me",
+		moreTitle: "What do I do on my free time?",
+		moreSub:
+			"The things that keep me curious and alive outside the terminal.",
 		stats: [],
 		projectsLabel: "Projects",
 		projectsTitle: "My work",
@@ -70,6 +80,7 @@ const T = {
 			"Idiomas",
 			"Habilidades",
 			"Contacto",
+			"Un poco más sobre mí!",
 		],
 		available: "Analista en computación",
 		heroSub:
@@ -85,6 +96,10 @@ const T = {
 			"Poseo una naturaleza meticulosa y atenta al detalle, la cual aplico con rigor en todas mis actividades.",
 		aboutP3:
 			"Mi objetivo es entregar soluciones que no solo funcionen, sino que estén pulidas al máximo :)",
+		moreLabel: "Un poco más sobre mí",
+		moreTitle: "¿Qué hago en mi tiempo libre?",
+		moreSub:
+			"Las cosas que me mantienen curiosa fuera de la terminal.",
 		stats: [],
 		projectsLabel: "Proyectos",
 		projectsTitle: "Mis trabajos",
@@ -100,8 +115,7 @@ const T = {
 		abilitiesTitle: "Competencias",
 		contactLabel: "Contacto",
 		contactTitle: "Trabajemos juntos",
-		contactSub:
-			"",
+		contactSub: "",
 		fields: { name: "Nombre", email: "Correo", message: "Mensaje" },
 		namePh: "Tu nombre",
 		emailPh: "tú@ejemplo.com",
@@ -124,6 +138,7 @@ const SECTION_IDS = [
 	"languages",
 	"abilities",
 	"contact",
+	"more",
 ];
 
 const PROJECTS = {
@@ -253,6 +268,7 @@ const FORMATION = {
 		},
 	],
 };
+
 const LANGS_DATA = [
 	{
 		name: { en: "Spanish", es: "Español" },
@@ -299,6 +315,62 @@ const ABILITIES_DATA = {
 		},
 	],
 };
+
+const HOBBIES = [
+	{
+		id: "coloring",
+		img: "https://images.unsplash.com/photo-1761034036962-22e04edc8b22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		alt: {
+			en: "",
+			es: "",
+		},
+		title: { en: "Coloring", es: "Pintar" },
+		desc: {
+			en: "",
+			es: "",
+		},
+	},
+	{
+		id: "sudokus",
+		img: "https://images.unsplash.com/photo-1640537702474-3e503c21eefc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		alt: {
+			en: "",
+			es: "",
+		},
+		title: { en: "Sudokus", es: "Sudokus" },
+		desc: {
+			en: "",
+			es: "",
+		},
+	},
+	{
+		id: "magnets",
+		img: "https://images.unsplash.com/photo-1611410873649-a8efa558fac8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsJTIwbWFnbmV0c3xlbnwwfHwwfHx8MA%3D%3D",
+		alt: {
+			en: "",
+			es: "",
+		},
+		title: { en: "Collecting magnets", es: "Coleccionar imanes" },
+		desc: {
+			en: "",
+			es: "",
+		},
+	},
+	{
+		id: "music",
+		img: "https://images.unsplash.com/photo-1701749059090-ac8afdba7b44?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		alt: {
+			en: "",
+			es: "",
+		},
+		title: { en: "Violin", es: "Violín" },
+		desc: {
+			en: "",
+			es: "",
+		},
+	},
+];
+
 function scrollToId(id) {
 	document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 }
@@ -481,6 +553,7 @@ export default function Page() {
 				<Languages t={t} lang={lang} languages={LANGS_DATA} />
 				<Abilities t={t} groups={ABILITIES_DATA[lang]} />
 				<Contact t={t} />
+				<MoreAboutMe t={t} lang={lang} hobbies={HOBBIES} />
 			</div>
 		</>
 	);

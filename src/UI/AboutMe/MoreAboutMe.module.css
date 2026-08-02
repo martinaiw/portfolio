@@ -1,0 +1,82 @@
+.section {
+    padding: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    max-width: 56rem;
+    width: 100%;
+  }
+  
+  .label {
+    display: inline-flex;
+    align-items: center;
+    background: var(--title-bg);
+    color: var(--title-fg);
+    font-family: 'Krona One', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    color: #eeeeee;
+    margin: 0;
+  }
+  
+  .sub {
+    font-size: 0.875rem;
+    max-width: 20rem;
+    color: var(--fg-muted);
+    margin: 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .mobileGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  @media (min-width: 768px) {
+    .section {
+      padding: 5rem 4rem;
+    }
+  
+    .header {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  
+    .title {
+      font-size: 2.25rem;
+    }
+  
+    .sub {
+      text-align: right;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section {
+      padding: 5rem 6rem;
+    }
+  }
