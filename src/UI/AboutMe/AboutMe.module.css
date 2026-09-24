@@ -1,10 +1,13 @@
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 5rem 1.5rem;
+  padding: 3rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+  height: calc(100vh - 52px);
+  min-height: calc(100vh - 52px);
 }
 
 .heroContent {
@@ -24,7 +27,7 @@
 
 .name {
   font-size: 3rem;
-  color: #eeeeee;
+  color: #1e1e1e;
   letter-spacing: -0.02em;
   margin: 0 0 1.5rem 0;
 }
@@ -138,6 +141,14 @@
 
   .aboutGrid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding: 2rem 1rem;
   }
 }
 

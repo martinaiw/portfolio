@@ -10,7 +10,7 @@
 
 .primary {
   background-color: var(--accent-solid);
-  color: #1e1e1e;
+  color: var(--fg);
 }
 
 .primary:hover {
@@ -21,6 +21,27 @@
   background: transparent;
   border-color: var(--border-accent);
   color: var(--accent-solid);
+}
+
+/* circular arrow button used in project display */
+.circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--bg-card);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.circle:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
 }
 
 .secondary:hover {

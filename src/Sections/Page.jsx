@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import AboutMe from "../UI/AboutMe/AboutMe";
+import BackgroundCanvas from "../UI/BackgroundCanvas";
 import Projects from "../UI/Projects/Projects";
 import Experience from "../UI/Experience/Experience";
 import Training from "../UI/Training/Training";
@@ -165,14 +166,15 @@ const PROJECTS = {
 	en: [
 	  {
 		id: 1,
-		video: videoFlashcards,
-		titulo: 'Flashcards App',
-		linkGH: 'https://github.com/martinaiw/flashcards-app',
-		link: 'https://flashcards-app-opal.vercel.app/',
-		descripcion: 'A small app to study for exams by simulating flashcards.',
-		hechoCon: 'Built with Vite + React',
-	  },
-	  {
+		images: [lumbricina1, lumbricina2, lumbricina3, lumbricina4, lumbricina5],
+		video: null,
+		titulo: 'Testing QA & Quality Management: Lumbricina Project',
+		linkJ1: 'https://nahual.github.io/qc-lumbricina/?v=1',
+		linkJ2: 'https://nahual.github.io/qc-lumbricina/',
+		linkDoc: '/portfolio/files/TpFinal_TestingQA.pdf',
+		descripcion: 'Manual testing planning and execution on the Lumbricina game. \n Identified discrepancies between the spec and the source code, documenting test cases and managing the defect backlog in Azure.',
+		hechoCon: 'Tools: Azure DevOps, documentation in Google Docs',
+	  },{
 		id: 2,
 		video: videoSwitcher,
 		titulo: 'El Switcher',
@@ -183,15 +185,14 @@ const PROJECTS = {
 	  },
 	  {
 		id: 3,
-		images: [lumbricina1, lumbricina2, lumbricina3, lumbricina4, lumbricina5],
-		video: null,
-		titulo: 'Testing QA & Quality Management: Lumbricina Project',
-		linkJ1: 'https://nahual.github.io/qc-lumbricina/?v=1',
-		linkJ2: 'https://nahual.github.io/qc-lumbricina/',
-		linkDoc: '/portfolio/files/TpFinal_TestingQA.pdf',
-		descripcion: 'Manual testing planning and execution on the Lumbricina game. \n Identified discrepancies between the spec and the source code, documenting test cases and managing the defect backlog in Azure.',
-		hechoCon: 'Tools: Azure DevOps, documentation in Google Docs',
-	  },
+		video: videoFlashcards,
+		titulo: 'Flashcards App',
+		linkGH: 'https://github.com/martinaiw/flashcards-app',
+		link: 'https://flashcards-app-opal.vercel.app/',
+		descripcion: 'A small app to study for exams by simulating flashcards.',
+		hechoCon: 'Built with Vite + React',
+	  }
+	  
 	],
 	es: [
 	  {
@@ -610,14 +611,15 @@ export default function Page() {
 			/>
 			{isDesktop && <SideNav active={activeSection} labels={t.nav} />}
 			<div id="scroll-root" ref={scrollRootRef} className={styles.scrollRoot}>
+				<BackgroundCanvas />
 				<AboutMe t={t} />
 				<Projects t={t} projects={PROJECTS[lang]} />
-				<Experience t={t} experience={EXPERIENCE[lang]} />
-				<Training t={t} formation={FORMATION[lang]} />
-				<Languages t={t} lang={lang} languages={LANGS_DATA} />
 				<Abilities t={t} groups={ABILITIES_DATA[lang]} />
+				<Training t={t} formation={FORMATION[lang]} />
+				<Experience t={t} experience={EXPERIENCE[lang]} />
+				<Languages t={t} lang={lang} languages={LANGS_DATA} />
+				{/* <MoreAboutMe t={t} lang={lang} hobbies={HOBBIES} /> */}
 				<Contact t={t} />
-				<MoreAboutMe t={t} lang={lang} hobbies={HOBBIES} />
 			</div>
 		</>
 	);

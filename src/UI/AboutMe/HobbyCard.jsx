@@ -28,7 +28,7 @@ export default function HobbyCard({ hobby, lang, hovered, onHover, gridColumn, g
           <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
             <path
               d="M1.5 6.5L6.5 1.5M6.5 1.5H2.5M6.5 1.5v4"
-              stroke={isHovered ? '#1e1e1e' : 'var(--accent-solid)'}
+              stroke={isHovered ? 'var(--fg)' : 'var(--accent-solid)'}
               strokeWidth="1.1"
               strokeLinecap="round"
               strokeLinejoin="round"

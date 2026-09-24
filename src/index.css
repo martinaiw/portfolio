@@ -3,20 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
 
 :root {
-	--bg: #1e1e1e;
-	--bg-card: #252525;
-	--bg-card-2: #2c2c2c;
-	--title-bg: #eeeeee;
+	--bg: #f5f7fa; /* gentle off-white */
+	--bg-card: #f0f2f5; /* soft card gray for contrast */
+	--bg-card-2: #eef1f4; /* slightly darker card variant */
+	--title-bg: #eef4f8;
 	--title-fg: #1e1e1e;
-	--fg: #d8d8d8;
-	--fg-muted: #888888;
-	--accent: rgba(15, 184, 184, 0.644);
+	--fg: #1e1e1e; /* primary text (dark) */
+	--fg-muted: #58606a;
+	--accent: rgba(15, 184, 184, 0.8);
 	--accent-solid: #0fb8b8;
-	--accent-glow: rgba(15, 184, 184, 0.15);
-	--border: rgba(255, 255, 255, 0.08);
-	--border-accent: rgba(15, 184, 184, 0.3);
+	--accent-glow: rgba(15, 184, 184, 0.06);
+	--border: rgba(0, 0, 0, 0.06);
+	--border-accent: rgba(15, 184, 184, 0.18);
 	--gris: var(--fg-muted);
-	--gris-slider: var(--bg-card);
+	--gris-slider: var(--bg-card-2);
 	--teal: var(--accent-solid);
 	--verde-fondo: var(--accent-solid);
 	--fuente-cuerpo: "IBM Plex Sans", sans-serif;
@@ -61,5 +61,5 @@ textarea {
 
 ::selection {
 	background: var(--accent-solid);
-	color: #1e1e1e;
+	color: var(--bg-card);
 }

@@ -64,7 +64,7 @@
 
 .sentTitle {
   font-size: 1.25rem;
-  color: #eeeeee;
+  color: var(--title-fg);
   margin: 0 0 0.5rem 0;
 }
 
