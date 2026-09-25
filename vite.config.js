@@ -3,15 +3,16 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-	plugins: [react()],
-	resolve: {
-		alias: {
-			"@": path.resolve(import.meta.dirname, "./src"),
-		},
-	},
-	server: {
-		watch: {
-			usePolling: true, 
-		},
-	},
+    plugins: [react()],
+    base: "/portfolio/",
+    resolve: {
+        alias: {
+            "@": path.resolve(import.meta.dirname, "./src"),
+        },
+    },
+    server: {
+        watch: {
+            usePolling: true, 
+        },
+    },
 });
